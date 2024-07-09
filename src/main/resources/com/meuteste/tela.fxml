@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/22" fx:controller="com.meuteste.TelaController">
+   <children>
+      <Label layoutX="220.0" layoutY="14.0" text="Maquina de coxinha">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="118.0" layoutY="59.0" text="Estoque">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="341.0" layoutY="154.0" text="Vender coxinhas">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="226.0" layoutY="265.0" text="Zerar Maquina">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="entradaAbastecer" layoutX="226.0" layoutY="100.0" />
+      <TextField fx:id="entradaVenderQtd" layoutX="321.0" layoutY="188.0" />
+      <Button fx:id="botaoAbastecer" layoutX="450.0" layoutY="100.0" mnemonicParsing="false" onAction="#abastecer" text="Abastecer" />
+      <Button fx:id="botaoVenderUmaCoxinha" layoutX="118.0" layoutY="228.0" mnemonicParsing="false" onAction="#venderUmaCoxinha" text="Vender" />
+      <Label layoutX="62.0" layoutY="154.0" text="Vender apenas uma coxinha">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="botaoZerarMaquina" layoutX="249.0" layoutY="317.0" mnemonicParsing="false" onAction="#zerarMaquina" text="Zerar" />
+      <Label layoutX="111.0" layoutY="102.0" text="Abastecer">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="saidaEstoque" layoutX="227.0" layoutY="57.0" />
+      <Button fx:id="botaoVenderQtd" layoutX="370.0" layoutY="228.0" mnemonicParsing="false" onAction="#venderQtd" text="Vender" />
+   </children>
+</AnchorPane>
