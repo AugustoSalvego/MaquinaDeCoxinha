@@ -13,8 +13,13 @@ public class TelaController {
     @FXML
     private TextField entradaVenderQtd;
     
-    private MaquinaCoxinha maquinaCoxinha = new MaquinaCoxinha();
+    private MaquinaCoxinha maquinaCoxinha;
+    
     @FXML
+    private void initialize(){
+    maquinaCoxinha = new MaquinaCoxinha();
+    }
+    
     private void atualizarEstoque() {
         saidaEstoque.setText(String.valueOf(maquinaCoxinha.getEstoque()));
     }
